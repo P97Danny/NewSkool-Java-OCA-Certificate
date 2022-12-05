@@ -27,6 +27,7 @@ public class Main {
             System.out.println("Answer is not correct, please try again.");
             System.out.print("Your answer: ");
             answer = askAnwser.nextLine();
+            if (!answer.equalsIgnoreCase(choiceOne))
         }
 
         // Confirm correct answer and close programm
