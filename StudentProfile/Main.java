@@ -5,7 +5,6 @@ public class Main {
     public static void main(String[] args){
 
         // Create a few students
-        StudentProfile student1 = new StudentProfile(null, null, 0, 0, null);
         
     }
     // Create a few students
