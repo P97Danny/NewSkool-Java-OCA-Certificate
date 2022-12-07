@@ -1,6 +1,6 @@
 package Beginner.PasswordComplexityCheck;
 
-public class ComplexityCheck {
+public class enumStatus {
     
     enum passwordStatus {
         Invalid_Status,
