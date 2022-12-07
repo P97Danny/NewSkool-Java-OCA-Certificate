@@ -6,7 +6,6 @@ public class Main {
 
     public static Double askWeeklyHours() {
 
-            boolean correctInput = false;
             System.out.print("Please input your weekly work hours: ");
             Scanner scannerWorkHours = new Scanner(System.in);
             Double weekHours = scannerWorkHours.nextDouble(); 
@@ -30,6 +29,7 @@ public class Main {
 
             // calculate monthly worked hours
             Double monthlyHours = weekHours * 4;
+            scannerWorkHours.close();
 
             return monthlyHours;
     }
@@ -39,6 +39,7 @@ public class Main {
         System.out.print("Now please input your monthly salary: ");
         Scanner scannerMonthSalary = new Scanner(System.in);
         Double hourSalary = scannerMonthSalary.nextDouble(); 
+        scannerMonthSalary.close();
 
         return hourSalary;
     }
