@@ -9,11 +9,9 @@ import DoubleOrNothingChallange.DoubleOrNothing;
 
 public class App 
 {
-    private static int starterPoints = 10;
     public static void main(String[] args)
     {
-        int currentPoints = starterPoints;
         DoubleOrNothing game = new DoubleOrNothing();
-        game.playGame(currentPoints);
+        game.playGame();
     }    
 }

@@ -66,9 +66,10 @@ public class DoubleOrNothing
 
     }
 
-    public void playGame(int currentPoints)
+    public void playGame()
     {
         boolean continuePlaying = false;
+        int currentPoints;
         // This instance will call all other instances to run the code
         try {
             do{
