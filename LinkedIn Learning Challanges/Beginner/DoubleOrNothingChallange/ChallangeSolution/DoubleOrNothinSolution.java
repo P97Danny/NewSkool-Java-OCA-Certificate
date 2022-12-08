@@ -28,6 +28,8 @@ public class DoubleOrNothinSolution {
                 return;
             }
         }
+
+        printWalkawayMessage();
     }
 
     private void printWelcome() {
