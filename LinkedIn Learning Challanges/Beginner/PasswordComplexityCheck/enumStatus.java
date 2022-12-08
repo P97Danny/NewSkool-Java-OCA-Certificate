@@ -1,9 +1,9 @@
 package PasswordComplexityCheck;
 
-public class enumStatus 
-{    
-    enum passwordStatus 
-    {
+public class enumStatus {    
+    
+    enum passwordStatus {
+
         Invalid_Status,
         Wrong_Length,
         No_Lowercase,
