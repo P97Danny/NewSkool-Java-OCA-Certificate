@@ -1,24 +1,36 @@
 package LetterPointsChallange;
 
-import java.util.Arrays;
-import java.util.List;
 import java.util.Map;
-import java.util.HashMap;
-
+import java.util.Scanner;
 
 public class App {
-    public static List<String> findStudentWithIncompleteVolunteerEvents( List<String> students, Map<String, List<String>> attendeesMapping) {
-        // TODO: implement function
-        return Arrays.asList();
+
+    public static final Map<Character, Integer> letterPoints = Map.ofEntries(Map.entry('A', 1),
+            Map.entry('B', 3), Map.entry('C', 3), Map.entry('D', 2), Map.entry('E', 1),
+            Map.entry('F', 4), Map.entry('G', 2), Map.entry('H', 4), Map.entry('I', 1),
+            Map.entry('J', 8), Map.entry('K', 5), Map.entry('L', 1), Map.entry('M', 3),
+            Map.entry('N', 1), Map.entry('O', 1), Map.entry('P', 3), Map.entry('Q', 10),
+            Map.entry('R', 1), Map.entry('S', 1), Map.entry('T', 1), Map.entry('U', 1),
+            Map.entry('W', 4), Map.entry('V', 4), Map.entry('X', 8), Map.entry('Y', 4),
+            Map.entry('Z', 10));
+
+    public static int wordScoreCalculator(String word) {
+        int scoredPoints;
+
+        for (int i = 0; i < word.length(); i++) {
+            char ch = word.charAt(i);
+            if (ch)
+        }
+                return 0;
     }
-
-    public static void main (String[] args) {
-        List<String> students = Arrays.asList("Sally", "Polly", "Molly", "Tony", "Harry");
-
-        Map<String, List<String>> attendeesMapping = Map.("Farmer's Market", "Car Wash Fundraiser", Arrays.asList("Molly", "Tony", "Polly"),
-                "Cooking Workshop", Arrays.asList("Sally", "Molly", "Polly"),
-                "Midnight Breakfast", Arrays.asList("Polly", "Molly"));
-
-        System.out.println(findStudentWithIncompleteVolunteerEvents(students, attendeesMapping));
+    
+    public static void main(String[] args) {
+        System.out.println("Enter a word and we'll tell you how many " +
+                "points it will earn!");
+        Scanner sc = new Scanner(System.in);
+        String word = sc.nextLine();
+        System.out.println("Your word " + word + " will earn "
+                + wordScoreCalculator(word));
+        sc.close();
     }
 }

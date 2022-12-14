@@ -1,7 +1,5 @@
 package ChallangeSolution;
 
-import ChallangeSolution.*;
-
 public class AppSolution {
 
     public static void main(String[] args){
