@@ -15,11 +15,11 @@ public class App {
             Map.entry('Z', 10));
 
     public static int wordScoreCalculator(String word) {
-        int scoredPoints;
+        // int scoredPoints;
 
         for (int i = 0; i < word.length(); i++) {
-            char ch = word.charAt(i);
-            if (ch)
+            // char ch = word.charAt(i);
+            // if (ch)
         }
                 return 0;
     }
